@@ -2,15 +2,135 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio QA - Vitulae</title>
+    <title>QA Portfolio - Vitulae</title>
+    <style>
+        body {
+            background-color: #333333;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 50px 0;
+        }
+
+        .intro-box {
+            background-color: #985637;
+            color: white;
+            padding: 20px 40px;
+            margin: 40px auto;
+            width: 60%;
+            max-width: 800px;
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            text-align: left;
+        }
+        .intro-box p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            text-align: center;
+        }
+        .intro-box p:first-child {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .game-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .game-link {
+            text-decoration: none;
+            color: inherit;
+        }
+        .game-card {
+            width: 300px;
+            min-height: 280px;
+            border-radius: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            border: 4px solid #777;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            background-color: #222;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .game-card:hover {
+            transform: scale(1.05);
+            border-color: #007bff;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            border-bottom: 1px solid #555;
+        }
+
+        .game-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .game-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 15px 0;
+            margin: 0;
+            color: white;
+        }
+
+        .main-title {
+            font-size: 4em;
+            color: #f7f7f7;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Witaj w moim Portfolio QA!</h1>
-    <p>To jest strona główna. Tu pojawią się moje profesjonalne raporty błędów z gry Ratchet & Clank: Rift Apart.</p>
-    
-<h2>Moje Case Study (Raporty Błędów)</h2>
-    <ul>
-        <li><a href="bug-report-rc-1-utkniecie-w-teksturze.html">Bug Report #1: Utknięcie w Teksturze na Sargasso (R&C: Rift Apart)</a></li>
-        </ul>
-    </body>
+    <h1 class="main-title">QA Portfolio</h1>
+
+    <div class="intro-box">
+        <p>Hi, my name is Adam.</p>
+        <p>I've documented few bugs that I've encountered within my playthrows and gathered them here. All of this is made solely to showoff my skills and expierience as a QA. I assumed that the best way to get into industry is to make something connected to it, so here it is. Enjoy your stay!</p>
+    </div>
+
+    <div class="game-grid">
+        
+        <a href="ratchet-clank-reports.html" class="game-link">
+            <div class="game-card">
+                <div class="image-container">
+                    <img src="images/capsule_616x353.jpg" alt="Ratchet & Clank Rift Apart" class="game-image">
+                </div>
+                <p class="game-title">Ratchet & Clank Rift Apart</p>
+            </div>
+        </a>
+
+        <a href="sea-of-thieves-reports.html" class="game-link">
+            <div class="game-card">
+                <div class="image-container">
+                    <img src="images/Sea-of-Thieves.jpg" alt="Sea of Thieves" class="game-image">
+                </div>
+                <p class="game-title">Sea of Thieves</p>
+            </div>
+        </a>
+
+        <a href="#" class="game-link">
+            <div class="game-card">
+                <div class="image-container">
+                    <img src="images/placeholder.png" alt="Placeholder Game" class="game-image">
+                </div>
+                <p class="game-title">Project Placeholder</p>
+            </div>
+        </a>
+        
+    </div>
+</body>
 </html>
