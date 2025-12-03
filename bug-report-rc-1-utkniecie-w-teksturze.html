@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Bug Report 1: Utknięcie w Teksturze - R&C Rift Apart</title>
+</head>
+<body>
+
+    <h1>Raport Błędu (Bug Report) #1</h1>
+    
+    <h2>Tytuł:</h2>
+    <p>Postać Rivet może utknąć (soft-lock) w obiekcie po wykonaniu akcji "Dash" w pobliżu krawędzi platformy na Planecie Sargasso.</p>
+
+    <hr>
+
+    <h3>1. Status i Priorytet</h3>
+    <ul>
+        <li><strong>Status:</strong> New (Nowy)</li>
+        <li><strong>Ważność (Severity):</strong> Major (Duży – uniemożliwia dalszą grę, wymaga restartu checkpointu)</li>
+        <li><strong>Priorytet (Priority):</strong> P2 (Wymaga naprawy przed wydaniem/w kolejnym patchu)</li>
+    </ul>
+
+    <h3>2. Środowisko Testowe (Environment)</h3>
+    <ul>
+        <li><strong>Platforma:</strong> PlayStation 5 (PS5)</li>
+        <li><strong>Wersja Gry:</strong> 1.004.000</li>
+        <li><strong>Obszar Wystąpienia:</strong> Planeta Sargasso, sekcja z wrakami statków kosmicznych (współrzędne ~X: 230, Y: 180)</li>
+    </ul>
+
+    <h3>3. Kroki do Reprodukcji (Steps to Reproduce)</h3>
+    <ol>
+        <li>Wczytaj grę w dowolnym punkcie kontrolnym na Planecie Sargasso.</li>
+        <li>Ustaw postać Rivet na skraju uszkodzonej metalowej platformy (przykład na załączonym wideo/screenie).</li>
+        <li>Obróć kamerę tak, aby krawędź była po lewej stronie ekranu.</li>
+        <li>Wykonaj akcję **Dash** (uniku) w kierunku krawędzi platformy.</li>
+        <li>*Uwaga:* Błąd występuje, gdy animacja "Dash" kończy się w momencie, gdy Rivet jest częściowo poza krawędzią.</li>
+    </ol>
+
+    <h3>4. Rezultaty</h3>
+    <ul>
+        <li><strong>Oczekiwany Rezultat:</strong> Postać Rivet powinna spaść z platformy, aktywując mechanizm powrotu na platformę (respawn) lub zatrzymać się na skraju platformy.</li>
+        <li><strong>Faktyczny Rezultat (Błąd):</strong> Postać Rivet natychmiast utyka w teksturze platformy. Kamera staje się nieruchoma (soft-lock), a jedyną możliwą akcją jest powrót do ostatniego punktu kontrolnego.</li>
+    </ul>
+
+    <h3>5. Załączniki i Dowody</h3>
+    <ul>
+        <li><strong>Link do Wideo:</strong> [Wklej link do Twojego nagrania (np. z YouTube, Google Drive, lub Imgur)]</li>
+        <li><strong>Link do Screena:</strong> [Wklej link do screena]</li>
+    </ul>
+
+</body>
+</html>
